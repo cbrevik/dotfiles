@@ -15,13 +15,17 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Setup fish config
+rm -rf $HOME/.config/fish
+ln -s $HOME/.dotfiles/.config/fish $HOME/.config/fish
+
+# Setup gitconfig
+rm $HOME/.gitconfig
+ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
+
 # Make fish the default shell
 if ! grep $(which fish) /etc/shells; then
     echo "Adding fish to /etc/shells"
     echo $(which fish) | sudo tee -a /etc/shells
 fi
 chsh -s $(which fish)
-
-# Remove old conifg, symlink from here
-rm -rf $HOME/.config/fish
-ln -s $HOME/.dotfiles/.config/fish $HOME/.config/fish

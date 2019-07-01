@@ -6,7 +6,7 @@ SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gcom:git\x20commit
 SETUVAR _fish_abbr_gd:git\x20difftool\x20\x2d\x2dno\x2dprompt
-SETUVAR _fish_abbr_gdd:git\x20difftool\x20\x2d\x2ddir\x2ddif
+SETUVAR _fish_abbr_gdd:git\x20difftool\x20\x2d\x2ddir\x2ddiff
 SETUVAR _fish_abbr_gpr:git\x20pull\x20\x2d\x2drebase
 SETUVAR _fish_abbr_gr:git\x20rebase
 SETUVAR _fish_abbr_gs:git\x20status
