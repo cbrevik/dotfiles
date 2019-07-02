@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'homebrew/cask-fonts'
 
 # Dev
 brew 'bat'
@@ -20,3 +21,6 @@ cask 'lastpass'
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'
+
+# Fonts
+cask 'font-fira-code'
