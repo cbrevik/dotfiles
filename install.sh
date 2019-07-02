@@ -3,6 +3,9 @@
 
 echo "Setting up your Mac..."
 
+echo "Some of these commands require root, so please auth once:"
+sudo -v
+
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -24,7 +27,7 @@ rm $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
 # Install or active the LTS node release
-echo "Install latest Node LTS release, requires password"
+echo "Install latest Node LTS release"
 sudo n lts
 
 # Make fish the default shell
@@ -32,4 +35,4 @@ if ! grep $(which fish) /etc/shells; then
     echo "Adding fish to /etc/shells"
     echo $(which fish) | sudo tee -a /etc/shells
 fi
-chsh -s $(which fish)
+sudo chsh -s $(which fish)
