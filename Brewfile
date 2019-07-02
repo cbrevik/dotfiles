@@ -1,9 +1,11 @@
 tap 'caskroom/cask'
 
 # Dev
-brew 'git'
-brew 'fish'
 brew 'bat'
+brew 'fish'
+brew 'git'
+brew 'n'
+brew 'yarn'
 
 # Apps
 cask 'anki'

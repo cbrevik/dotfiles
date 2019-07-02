@@ -23,6 +23,10 @@ ln -s $HOME/.dotfiles/.config/fish $HOME/.config/fish
 rm $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
+# Install or active the LTS node release
+echo "Install latest Node LTS release, requires password"
+sudo n lts
+
 # Make fish the default shell
 if ! grep $(which fish) /etc/shells; then
     echo "Adding fish to /etc/shells"
