@@ -11,3 +11,5 @@
 	trustExitCode = true
 [alias]
 	fixup = commit --amend --no-edit
+[core]
+	excludesfile = ~/.dotfiles/.gitignore_global
