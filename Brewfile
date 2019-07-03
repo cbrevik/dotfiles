@@ -4,8 +4,10 @@ tap 'homebrew/cask-fonts'
 # Dev
 brew 'bat'
 brew 'fish'
+brew 'fzf'
 brew 'git'
 brew 'n'
+brew 'ripgrep'
 brew 'yarn'
 
 # Apps
