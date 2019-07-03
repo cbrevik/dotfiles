@@ -26,6 +26,10 @@ ln -s $HOME/.dotfiles/.config/fish $HOME/.config/fish
 rm $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
+# Set iterm2 settings
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
 # Install or active the LTS node release
 echo "Install latest Node LTS release"
 sudo n lts
