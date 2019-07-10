@@ -1,3 +1,5 @@
+set -xg PATH $HOME/.dotfiles/bin $PATH
+
 abbr ga 'git add'
 abbr gs 'git status'
 abbr gb 'git branch'

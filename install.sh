@@ -30,6 +30,10 @@ ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
+# Try github repo search, stolen from https://github.com/mattorb/dotfiles
+go build -ldflags="-s -w" -o ./bin/listrepo_gql ./lib/listrepo_gql.go
+go build -ldflags="-s -w" -o ./bin/nauniq ./lib/nauniq.go
+
 # Install or active the LTS node release
 echo "Install latest Node LTS release"
 sudo n lts
