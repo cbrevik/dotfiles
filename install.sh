@@ -34,15 +34,15 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 echo "Install latest Node LTS release"
 sudo n lts
 
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+source $HOME/.cargo/env
+rustup toolchain install nightly
+rustup default nightly
+
 # Make fish the default shell
 if ! grep $(which fish) /etc/shells; then
     echo "Adding fish to /etc/shells"
     echo $(which fish) | sudo tee -a /etc/shells
 fi
 sudo chsh -s $(which fish)
-
-# Install Rust
-rustup-init -y
-source $HOME/.cargo/env
-rustup toolchain install nightly
-rustup default nightly

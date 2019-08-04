@@ -10,7 +10,6 @@ brew 'hub'
 brew 'lastpass-cli'
 brew 'n'
 brew 'ripgrep'
-brew 'rustup'
 brew 'yarn'
 
 # Apps
