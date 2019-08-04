@@ -40,3 +40,9 @@ if ! grep $(which fish) /etc/shells; then
     echo $(which fish) | sudo tee -a /etc/shells
 fi
 sudo chsh -s $(which fish)
+
+# Install Rust
+rustup-init -y
+source $HOME/.cargo/env
+rustup toolchain install nightly
+rustup default nightly
