@@ -1,5 +1,6 @@
 tap 'caskroom/cask'
 tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-drivers'
 
 # Dev
 brew 'bat'
@@ -21,6 +22,8 @@ cask 'discord'
 cask 'docker'
 cask 'firefox'
 cask 'iterm2'
+cask 'onedrive'
+cask 'qmk-toolbox'
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'
