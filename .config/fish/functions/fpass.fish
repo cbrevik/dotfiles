@@ -4,5 +4,5 @@ function fpass -d "Fuzzy-find a Lastpass entry and copy the password"
     return 0
   end
 
-  lpass ls | fzf | string replace -r -a '.+\[id: (\d+)\]' '$1' | read -l result; and lpass show -c --password "$result"
+  lpass ls -l | fzf | string replace -r -a '.+\[id: (\d+)\].+' '$1' | read -l result; and lpass show -c --password "$result"
 end
