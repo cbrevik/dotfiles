@@ -88,9 +88,9 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 136 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>29 74 1039 858 0 0 1680 1027 </string>
+	<string>116 93 1396 858 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>212 101 570 467 0 0 1680 1027 </string>
+	<string>518 277 570 451 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -893,10 +893,17 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.2.9</string>
-		<string>3.3.0beta13</string>
+		<string>3.3.3beta1</string>
+		<string>3.3.5beta2</string>
+		<string>3.3.1beta1</string>
 		<string>3.3.0beta16</string>
+		<string>3.3.4beta1</string>
+		<string>3.3.0beta13</string>
+		<string>3.3.2beta1</string>
 		<string>3.3.0beta15</string>
+		<string>3.2.9</string>
+		<string>3.3.3beta2</string>
+		<string>3.3.5beta1</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
@@ -910,7 +917,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>B739CC65-3D29-4F9A-9BF7-26FD101BB1C1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>14</integer>
+	<integer>25</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1263,6 +1270,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.termid</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.terminalIconName</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1343,6 +1358,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>number</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession.hostname</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -1408,9 +1431,25 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<false/>
+				<key>name</key>
+				<string>title</string>
+				<key>nonterminalContext</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
 				<string>tmuxWindowTitle</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>title</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -1653,7 +1692,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-08-06T18:34:29Z</date>
+	<date>2019-10-03T13:46:13Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -1662,6 +1701,8 @@
 	<false/>
 	<key>StatusBarPosition</key>
 	<integer>0</integer>
+	<key>SuppressRestartAnnouncement</key>
+	<true/>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>UseLionStyleFullscreen</key>
@@ -1671,6 +1712,6 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.3.0beta16</string>
+	<string>3.3.5beta2</string>
 </dict>
 </plist>
