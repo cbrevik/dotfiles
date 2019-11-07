@@ -1,6 +1,7 @@
 set -x LC_ALL en_US.UTF-8
 set -gx PATH $PATH $HOME/.cargo/bin
 set -gx PATH $PATH $HOME/.dotnet/tools
+set -gx ANDROID_SDK_ROOT $HOME/Library/Android/sdk
 
 abbr ga 'git add'
 abbr gs 'git status'
@@ -16,3 +17,4 @@ abbr gr 'git rebase'
 abbr rn 'react-native'
 abbr mk 'minikube'
 abbr sim 'open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
+abbr d 'docker'
