@@ -42,6 +42,7 @@ rustup default stable
 
 # npm hosted stuff
 yarn global add now
+yarn global add azurite
 
 # Make fish the default shell
 if ! grep $(which fish) /etc/shells; then
