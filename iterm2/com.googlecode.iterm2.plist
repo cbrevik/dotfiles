@@ -185,11 +185,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>0 163 224 275 0 0 1680 1027 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>1410 768 620 392 0 0 3440 1417 </string>
+	<string>530 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 136 796 486 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>73 126 1095 676 0 0 1680 1027 </string>
+	<string>0 220 1327 807 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>518 277 570 451 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -998,6 +998,7 @@
 		<string>3.3.5beta2</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.2beta1</string>
+		<string>3.3.7beta3</string>
 		<string>3.3.0beta13</string>
 		<string>3.3.1beta1</string>
 		<string>3.3.0beta15</string>
@@ -1007,21 +1008,29 @@
 		<string>3.3.5beta3</string>
 		<string>3.3.7beta2</string>
 		<string>3.3.4beta1</string>
+		<string>3.3.7beta4</string>
 		<string>3.2.9</string>
 	</array>
+	<key>NoSyncFrame_SessionsPreferences</key>
+	<dict>
+		<key>screenFrame</key>
+		<string>{{0, 0}, {1680, 1050}}</string>
+		<key>topLeft</key>
+		<string>{537, 899}</string>
+	</dict>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {3440, 1440}}</string>
 		<key>topLeft</key>
-		<string>{348, 801}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>B739CC65-3D29-4F9A-9BF7-26FD101BB1C1</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>36</integer>
+	<integer>50</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1796,10 +1805,12 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-10-31T07:44:05Z</date>
+	<date>2019-11-30T12:05:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
+	<true/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>SoundForEsc</key>
 	<false/>
@@ -1818,6 +1829,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.7beta2</string>
+	<string>3.3.7beta4</string>
 </dict>
 </plist>
