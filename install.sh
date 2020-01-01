@@ -41,8 +41,11 @@ rustup toolchain install stable
 rustup default stable
 
 # npm hosted stuff
-yarn global add now
 yarn global add azurite
+yarn global add esy
+yarn global add ios-deploy
+yarn global add now
+yarn global add smee-client
 
 # Make fish the default shell
 if ! grep $(which fish) /etc/shells; then
