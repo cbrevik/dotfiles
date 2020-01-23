@@ -31,8 +31,8 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfile
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 # Install or active the LTS node release
-echo "Install latest Node LTS release"
-sudo n lts
+echo "Install Node 10.16.3"
+sudo n 10.16.3
 
 # Install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
