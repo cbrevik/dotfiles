@@ -8,7 +8,7 @@ sudo -v
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Update Homebrew recipes
@@ -26,26 +26,16 @@ ln -s $HOME/.dotfiles/.config/fish $HOME/.config/fish
 rm $HOME/.gitconfig
 ln -s $HOME/.dotfiles/.gitconfig $HOME/.gitconfig
 
-# Set iterm2 settings
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/iterm2"
-defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
-
 # Install or active the LTS node release
 echo "Install Node LTS"
 sudo n lts
 
 # Install Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup toolchain install stable
 rustup default stable
 
-# npm hosted stuff
-yarn global add azurite
-yarn global add esy
-yarn global add ios-deploy
-yarn global add now
-yarn global add smee-client
 
 # Make fish the default shell
 if ! grep $(which fish) /etc/shells; then
