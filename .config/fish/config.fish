@@ -10,11 +10,7 @@ set -gx PATH $PATH $HOME/flutter/bin
 set -gx PATH $PATH /Library/Frameworks/Python.framework/Versions/3.8/bin/
 set -gx GOOGLE_APPLICATION_CREDENTIALS /Users/christianbrevik/.config/gcloud/application_default_credentials.json
 
-status --is-interactive; and source (rbenv init -|psub)
-
- set -g -x "CLOUDSDK_PYTHON" "/usr/local/opt/python@3.8/libexec/bin/python"
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
-
+abbr k 'kubectl'
 abbr ga 'git add'
 abbr gs 'git status'
 abbr gb 'git branch'
@@ -40,7 +36,3 @@ abbr yad 'rm -rf node_modules && yarn'
 abbr bd 'pbpaste | openssl base64 -d | pbcopy'
 abbr be 'pbpaste | openssl base64 -e | pbcopy'set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/ruby/bin" $fish_user_paths
-
-thefuck --alias | source
-rvm default
-status --is-interactive; and source (jenv init -|psub)
