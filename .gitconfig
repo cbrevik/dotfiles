@@ -1,6 +1,7 @@
 [user]
 	email = christian.brevik@gmail.com
 	name = Christian Brevik
+	signingKey = BF7A3877E4D772C697EE78119ED88DB75E250456
 [diff]
 	tool = bc3
 [difftool "bc3"]
@@ -24,3 +25,5 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[commit]
+	gpgsign = true
