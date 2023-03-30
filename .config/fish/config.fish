@@ -11,3 +11,6 @@ abbr gpo 'git pull origin'
 abbr gppo 'git push origin'
 abbr gr 'git rebase'
 abbr yad 'rm -rf node_modules && yarn'
+
+# pyenv for handling Python installations
+pyenv init - | source
