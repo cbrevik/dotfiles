@@ -8,9 +8,13 @@ tap 'mike-engel/jwt-cli'
 # Dev
 brew 'azure-cli'
 brew 'azure-functions-core-tools'
+brew 'bitwarden-cli'
+brew 'cmake'
 brew 'fish'
 brew 'git'
 brew 'git-crypt'
+brew 'git-lfs'
+brew 'gh'
 brew 'gnupg'
 brew 'helm'
 brew 'imagemagick'
@@ -20,8 +24,11 @@ brew 'n'
 brew 'neovim'
 # save gpg passphrase in keychain
 brew 'pinentry-mac'
+brew 'pgvector'
+brew 'pkg-config'
 brew 'pyenv'
 brew 'ripgrep'
+brew 'sdl2'
 brew 'yarn'
 
 # Apps
@@ -47,6 +54,7 @@ cask 'signal'
 cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'
+cask 'warp'
 
 # Fonts
 cask 'font-fira-code'
