@@ -14,3 +14,9 @@ abbr yad 'rm -rf node_modules && yarn'
 
 # pyenv for handling Python installations
 pyenv init - | source
+
+# jenv for handling Java installations
+jenv init - | source
+
+# z jump command init
+zoxide init fish | source
