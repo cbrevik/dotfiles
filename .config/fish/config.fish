@@ -11,6 +11,10 @@ abbr gpo 'git pull origin'
 abbr gppo 'git push origin'
 abbr gr 'git rebase'
 abbr yad 'rm -rf node_modules && yarn'
+abbr gf 'git fixup'
+abbr gfix 'git add -A && git fixup'
+abbr kga 'kubectl get all'
+abbr kcg 'kubectl config get-contexts'
 
 # pyenv for handling Python installations
 pyenv init - | source
@@ -20,3 +24,6 @@ jenv init - | source
 
 # z jump command init
 zoxide init fish | source
+
+# ruby env
+status --is-interactive; and rbenv init - fish | source

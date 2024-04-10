@@ -50,6 +50,8 @@ function fish_prompt
     echo -n -s ' · ' $git_info $normal
   end
 
+  echo -n -s (set_color blue) (__kube_prompt)
+
   set -l prompt_color $red
   if test $last_status = 0
     set prompt_color $normal
