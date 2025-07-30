@@ -1,8 +1,3 @@
-tap 'homebrew/cask'
-tap 'homebrew/cask-drivers'
-tap 'azure/kubelogin'
-tap 'mike-engel/jwt-cli'
-
 # Dev
 brew 'act'
 brew 'azure-cli'
